@@ -49,6 +49,8 @@ contract Greeter  {
 ````
 3. Test
 
-using Remix IDE
+## Compilation Artifacts generated in Remix IDE
+
+[Compilation Artifacts](https://github.com/ManjiriBirajdar/SmartContracts-Solidity/blob/main/Solidity-Compilation-Artifacts.md)
 
 ## Use Remix IDE
