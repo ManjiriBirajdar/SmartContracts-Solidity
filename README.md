@@ -56,7 +56,7 @@ using Remix IDE
 1. Explain address of a smart contract
 2. List compilation artifacts:
    Clock "Compilation Details" button in the Remix IDE. A window will pop up with details displying contract details.
-  - Byte code
+  - Byte code (for deploying contracts)
    ````
    {
 	"linkReferences": {},
@@ -65,7 +65,7 @@ using Remix IDE
 	"sourceMap": "25:352:0:-;;;141:56;8:9:-1;5:2;;;30:1;27;20:12;5:2;141:56:0;172:18;;;;;;;;;;;;;;;;;:8;:18;;;;;;;;;;;;:::i;:::-;;25:352;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;"
 }
    ````
-  - ABI (Application Binary Interfaces )
+  - ABI (Application Binary Interfaces ) (for application that smart contract interact with a deployed bytecode)
    ````
    [
 	{
