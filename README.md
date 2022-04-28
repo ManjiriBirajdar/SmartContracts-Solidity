@@ -56,7 +56,8 @@ using Remix IDE
 1. Address of a smart contract
 2. Compilation artifacts:
    Clock "Compilation Details" button in the Remix IDE. A window will pop up with details displying contract      details.
-   
+ 
+ ### Name of the contract
  ### Byte code (for deploying contracts)
    Contract bytecode, this is the bytecode that is executed for instantiating a smart contract on the EVM.
    e.g. consider it as executing a constructor of a smart contract to create an object.
