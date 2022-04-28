@@ -51,12 +51,15 @@ contract Greeter  {
 
 using Remix IDE
 
-## Smart Contract Solution / Understand smart contracts
+## Understand smart contracts
 
-1. Explain address of a smart contract
-2. List compilation artifacts:
-   Clock "Compilation Details" button in the Remix IDE. A window will pop up with details displying contract details.
-  - Byte code (for deploying contracts)
+1. Address of a smart contract
+2. Compilation artifacts:
+   Clock "Compilation Details" button in the Remix IDE. A window will pop up with details displying contract      details.
+   
+ ### Byte code (for deploying contracts)
+   Contract bytecode, this is the bytecode that is executed for instantiating a smart contract on the EVM.
+   e.g. consider it as executing a constructor of a smart contract to create an object.
    ````
    {
 	"linkReferences": {},
@@ -65,7 +68,9 @@ using Remix IDE
 	"sourceMap": "25:352:0:-;;;141:56;8:9:-1;5:2;;;30:1;27;20:12;5:2;141:56:0;172:18;;;;;;;;;;;;;;;;;:8;:18;;;;;;;;;;;;:::i;:::-;;25:352;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;"
 }
    ````
-  - ABI (Application Binary Interfaces ) (for application that smart contract interact with a deployed bytecode)
+  ### ABI (Application Binary Interfaces ) 
+   Interface scheme for a transaction to invoke functions on the smart contract instance bytecode.
+   (for application that smart contract interact with a deployed bytecode)
    ````
    [
 	{
@@ -120,8 +125,13 @@ using Remix IDE
 		"type": "function"
 	}
 ]
+
    ````
-  - web3deploy
+  ### web3deploy script
+ 
+  It consist of two items
+  - json script to web app to invokde smart contract function
+  - script for programatically deploying s smart contract from a web app
    ````
    var greeterContract = new web3.eth.Contract([{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"constant":true,"inputs":[],"name":"hello","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"string","name":"name","type":"string"}],"name":"set","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"yourName","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"}]);
 var greeter = greeterContract.deploy({
@@ -138,7 +148,9 @@ var greeter = greeterContract.deploy({
     }
  })
    ````
-  - Function hashes
+  ### Function hashes
+  
+  First 4 byte of the function signatures to facilitate function invocation by a transaction
   ````
   {
       "19ff1d21": "hello()",
@@ -146,7 +158,10 @@ var greeter = greeterContract.deploy({
       "d97d6630": "yourName()"
   }
   ````
-  - Gas estimates
+  ### Gas estimates
+  
+  Provides gas esimates for deploying the smart contract and for the function invocation
+  
   ````
     {
     "Creation": {
