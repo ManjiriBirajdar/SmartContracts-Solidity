@@ -1,8 +1,6 @@
 # Smart Contracts Development using Solidity
 
-## Learning Objectives:
-
-### Elements of Smart Contracts / Problems that can be solved by smart contracts
+## Elements of Smart Contracts
 
 1. Pragma derective
 
@@ -14,9 +12,9 @@
 
 (ASCII and Use camel case convention)
 
-### Syntax & Semantics of Solidity / Structure of smart contracts
+## Syntax & Semantics of Solidity / Structure of smart contracts
 
-3 Steps in development of smart contract  :
+### 3 Steps in development of smart contract  :
 
 1. Design
 
@@ -53,7 +51,9 @@ contract Greeter  {
 ````
 3. Test
 
-### Smart Contract Solution / Understand smart contracts
+using Remix IDE
+
+## Smart Contract Solution / Understand smart contracts
 
 1. Explain address of a smart contract
 2. List compilation artifacts:
@@ -62,4 +62,4 @@ contract Greeter  {
     - Function hashes
     - Gas estimates
 
-### Use Remix IDE
+## Use Remix IDE
