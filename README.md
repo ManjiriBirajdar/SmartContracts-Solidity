@@ -55,4 +55,11 @@ contract Greeter  {
 
 ### Smart Contract Solution / Understand smart contracts
 
+1. Explain address of a smart contract
+2. List compilation artifacts:
+    - Byte code
+    - ABI & web3deploy
+    - Function hashes
+    - Gas estimates
+
 ### Use Remix IDE
