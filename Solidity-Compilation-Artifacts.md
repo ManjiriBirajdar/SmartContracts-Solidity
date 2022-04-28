@@ -1,12 +1,26 @@
-# Understand smart contracts
+# Important Compilation Artifacts generated in Remix IDE
 
-1. Address of a smart contract
-2. Compilation artifacts:
-   Clock "Compilation Details" button in the Remix IDE. A window will pop up with details displying contract      details.
+Consider example: 
+[Greeter.sol](https://github.com/ManjiriBirajdar/SmartContracts-Solidity/blob/main/Greeter.sol)
+
+## Address of a smart contract
+
+Example: Greeter.sol
+
+````
+GREETER AT 0xd9145CCE52D386f254917e481eB44e9943F39138
+````
+## Compilation Artifacts:
+
+   Click "Compilation Details" button in the Remix IDE. A window will pop up displying contract details.
  
- ## Name of the contract
+ ### Name of the contract
  
- ## Byte code (for deploying contracts)
+ ````
+ Greeter
+ ````
+ 
+ ### Byte code (for deploying contracts)
    Contract bytecode, this is the bytecode that is executed for instantiating a smart contract on the EVM.
    e.g. consider it as executing a constructor of a smart contract to create an object.
    ````
@@ -17,7 +31,7 @@
 	"sourceMap": "25:352:0:-;;;141:56;8:9:-1;5:2;;;30:1;27;20:12;5:2;141:56:0;172:18;;;;;;;;;;;;;;;;;:8;:18;;;;;;;;;;;;:::i;:::-;;25:352;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;"
 }
    ````
-  ## ABI (Application Binary Interfaces ) 
+  ### ABI (Application Binary Interfaces ) 
    Interface scheme for a transaction to invoke functions on the smart contract instance bytecode.
    (for application that smart contract interact with a deployed bytecode)
    ````
@@ -76,7 +90,7 @@
 ]
 
    ````
-  ## web3deploy script
+  ### web3deploy script
  
   It consist of two items
   - json script to web app to invokde smart contract function
@@ -97,7 +111,7 @@ var greeter = greeterContract.deploy({
     }
  })
    ````
-  ## Function hashes
+  ### Function hashes
   
   First 4 byte of the function signatures to facilitate function invocation by a transaction
   ````
@@ -107,7 +121,7 @@ var greeter = greeterContract.deploy({
       "d97d6630": "yourName()"
   }
   ````
-  ## Gas estimates
+  ### Gas estimates
   
   Provides gas esimates for deploying the smart contract and for the function invocation
   
