@@ -87,3 +87,7 @@ contract DataTypes{
         return _accounts[msg.sender].balance;
     }
 }
+
+/**
+Reference : https://www.youtube.com/watch?v=8UhO3IKApSg
+*/
