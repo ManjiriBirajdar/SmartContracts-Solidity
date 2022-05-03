@@ -1,27 +1,20 @@
-# Data or state variables
+## Data or state variables
 
-# List of Functions:
+## List of Functions:
 
-## Constructor
+- Constructor
+- Fallback
+- View
+- Pure
+- Public
+- Private
+- Internal
+- External
 
-## Fallback
+## User defined types in struct and enums
 
-## View
+## Modifiers
 
-## Pure
+## Events
 
-## Public
-
-## Private
-
-## Internal
-
-## External
-
-# User defined types in struct and enums
-
-# Modifiers
-
-# Events
-
-# Inheritance
+## Inheritance
