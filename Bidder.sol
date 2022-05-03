@@ -1,5 +1,18 @@
 pragma solidity ^0.5.9; 
 
+/**
+Bidder
+
+string name;
+uint bidAmount;
+bool eligible;
+uint minBid;
+
+setName()
+setBidAmount()
+determineEligibility()
+*/
+
 contract Bidder {
     
     string public name = "Buffalo";
