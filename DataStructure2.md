@@ -8,9 +8,19 @@ Run [StateTransV2.sol](https://github.com/ManjiriBirajdar/SmartContracts-Solidit
    - Time is defined as unit time; seconds, minutes, hours, days, weeks and years.
 
 ### now 
+   - it is the time when transaction is confirmed!
    - A variable called "Now" defined by solidity, returns the block timestamp. 
    - This variable is often used for evaluating time related conditions. 
-   - In other words, now variable in a function is not the time at which        function transaction was initiated, but it is the time when it was confirmed. 
-    
+   - In other words, now variable in a function is not the time at which function transaction was initiated, but it is the time when it was confirmed. 
+   
+      ````
+      now = creation time
+      ````
+### enum
+   -  internal use and not supported at ABI level of solidity
+   - Example
+      ````
+      enum Stage {Init, Reg, Vote, Done}
+      ````
 
    
