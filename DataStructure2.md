@@ -12,7 +12,6 @@ Run [StateTransV2.sol](https://github.com/ManjiriBirajdar/SmartContracts-Solidit
    - A variable called "Now" defined by solidity, returns the block timestamp. 
    - This variable is often used for evaluating time related conditions. 
    - In other words, now variable in a function is not the time at which function transaction was initiated, but it is the time when it was confirmed. 
-   
       ````
       now = creation time
       ````
