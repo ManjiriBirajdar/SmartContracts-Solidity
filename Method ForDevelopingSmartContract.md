@@ -19,10 +19,13 @@
 
 
 ## 2. Analyze the Problem
+
   chairperson vote - 2
+  
   Regular voter - 1  
     
 ## 3. Design : use Class Diagram to represnt design
+      
       
       ````
       Ballot
@@ -37,10 +40,12 @@
       register()
       vote()
       winningProposal()  
+      
       ````
     
 ## 4. State variables and functions
 Define the visibility for the state variables and functions
+
 
 ## 5. Access modifiers
 Define access modifiers for the functions
